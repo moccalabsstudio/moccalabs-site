@@ -27,7 +27,23 @@ export type Post = {
   content?: string;
 };
 
-export type Author = {
+export type Work = {
+  frontmatter: {
+    title: string;
+    meta_title?: string;
+    description?: string;
+    image?: string;
+    categories: string[];
+    author: string;
+    tags: string[];
+    date?: string;
+    draft?: boolean;
+  };
+  slug?: string;
+  content?: string;
+};
+
+export type Team = {
   frontmatter: {
     title: string;
     image?: string;

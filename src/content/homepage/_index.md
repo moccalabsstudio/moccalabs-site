@@ -1,13 +1,13 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Next Project"
-  content: "Nextplate is a free starter template built with Next and TailwindCSS, providing everything you need to jumpstart your Next project and save valuable time."
+  title: "Transforming Ideas into <br /> Digital Reality"
+  content: "Moccalabs are the architects of innovation. We specialize in crafting cutting-edge software solutions tailored to meet the unique needs of our clients. We have the expertise and passion to turn your ideas into reality"
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/nextplate"
+    label: "Hire Us"
+    link: "/contact"
 
 # Features
 features:
@@ -24,7 +24,7 @@ features:
     button:
       enable: false
       label: "Get Started Now"
-      link: "#"
+      link: "/contact"
 
   - title: "Discover the Key Features Of Next"
     image: "/images/service-2.png"
@@ -36,7 +36,7 @@ features:
     button:
       enable: true
       label: "Get Started Now"
-      link: "https://github.com/zeon-studio/nextplate"
+      link: "/contact"
 
   - title: "The Top Reasons to Choose Next for Your Next Project"
     image: "/images/service-3.png"

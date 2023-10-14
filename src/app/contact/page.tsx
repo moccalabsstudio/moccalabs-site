@@ -23,7 +23,14 @@ const Contact = async () => {
         <div className="container">
           <div className="row">
             <div className="mx-auto md:col-10 lg:col-6">
-              <form action={contact_form_action} method="POST">
+
+              <h5 className="text-center">Contact us today to discuss your project, and let's embark on a journey of innovation, creativity, and technological advancement.</h5>
+              <br />
+              <p className="text-center">
+                <a href="mailto:moccalabsstudio@gmail.com">moccalabsstudio@gmail.com</a>
+              </p>
+
+              {/* <form action={contact_form_action} method="POST">
                 <div className="mb-6">
                   <label htmlFor="name" className="form-label">
                     Full Name <span className="text-red-500">*</span>
@@ -63,7 +70,7 @@ const Contact = async () => {
                 <button type="submit" className="btn btn-primary">
                   Submit
                 </button>
-              </form>
+              </form> */}
             </div>
           </div>
         </div>

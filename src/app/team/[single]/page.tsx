@@ -6,14 +6,14 @@ import MDXContent from "@/helpers/MDXContent";
 import { getSinglePage } from "@/lib/contentParser";
 import { slugify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
-import { Author, Post } from "@/types";
+import { Team, Post } from "@/types";
 
 // remove dynamicParams
 export const dynamicParams = false;
 
 // generate static params
 export const generateStaticParams: () => { single?: string }[] = () => {
-  const authors: Author[] = getSinglePage("authors");
+  const authors: Team[] = getSinglePage("team");
 
   const paths = authors.map((author) => ({
     single: author.slug,
@@ -22,14 +22,14 @@ export const generateStaticParams: () => { single?: string }[] = () => {
   return paths;
 };
 
-const AuthorSingle = ({ params }: { params: { single: string } }) => {
-  const authors: Author[] = getSinglePage("authors");
+const TeamSingle = ({ params }: { params: { single: string } }) => {
+  const authors: Team[] = getSinglePage("team");
   const author = authors.filter((page) => page.slug === params.single)[0];
   const { frontmatter, content } = author;
   const { title, social, meta_title, description, image } = frontmatter;
   const { blog_folder } = config.settings;
   const posts: Post[] = getSinglePage(blog_folder);
-  const postFilterByAuthor: Post[] = posts.filter(
+  const postFilterByTeam: Post[] = posts.filter(
     (post) => slugify(post.frontmatter.author) === slugify(title),
   );
 
@@ -63,7 +63,7 @@ const AuthorSingle = ({ params }: { params: { single: string } }) => {
           </div>
 
           <div className="row justify-center pb-16 pt-14">
-            {postFilterByAuthor.map((post, index: number) => (
+            {postFilterByTeam.map((post, index: number) => (
               <div className="mb-12 md:col-6 lg:col-4" key={index}>
                 <BlogCard data={post} />
               </div>
@@ -75,4 +75,4 @@ const AuthorSingle = ({ params }: { params: { single: string } }) => {
   );
 };
 
-export default AuthorSingle;
+export default TeamSingle;

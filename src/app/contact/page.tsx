@@ -24,7 +24,7 @@ const Contact = async () => {
           <div className="row">
             <div className="mx-auto md:col-10 lg:col-6">
 
-              <h5 className="text-center">Contact us today to discuss your project, and let&apos;s embark on a journey of innovation, creativity, and technological advancement.</h5>
+              <h5 className="text-center">Contact us today to discuss your project, and lets embark on a journey of innovation, creativity, and technological advancement.</h5>
               <br />
               <p className="text-center">
                 <a href="mailto:moccalabsstudio@gmail.com">moccalabsstudio@gmail.com</a>

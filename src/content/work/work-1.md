@@ -51,7 +51,7 @@ Menghasilkan laporan analitik untuk memahami produktivitas dan kinerja karyawan.
 <b>1. Manajemen Akses: </b>
 Memastikan bahwa hanya pengguna yang diotorisasi yang dapat mengakses data pekerjaan dan informasi gaji.
 
-<b>Pengamanan Data: </b>
+<b>2. Pengamanan Data: </b>
 Menggunakan tindakan pengamanan yang kuat untuk melindungi data karyawan dan gaji.
 
 <h5>Manfaat Utama:</h5>
